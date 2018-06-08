@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "1064035486079",
+    "firebase_url": "https://instant-delay-repay.firebaseio.com",
+    "project_id": "instant-delay-repay",
+    "storage_bucket": "instant-delay-repay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064035486079:android:36659b741e707fd6",
+        "android_client_info": {
+          "package_name": "com.example.geeksera.instantdelayrepay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064035486079-f2nbc6o955ic2eled06agb3ut92hhrcl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geeksera.instantdelayrepay",
+            "certificate_hash": "5747b7dfbaacde6d5412039874bf9bfee5aa33a7"
+          }
+        },
+        {
+          "client_id": "1064035486079-t3voa2hts8qj5r5ivq432sr4htq1t26v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzwWu7eX83bW-c5LSVXqrwcY6_QGE6Lyo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064035486079-t3voa2hts8qj5r5ivq432sr4htq1t26v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064035486079:android:78f59dcd47d54588",
+        "android_client_info": {
+          "package_name": "com.traintimes.app.instantdelayrepay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064035486079-t3voa2hts8qj5r5ivq432sr4htq1t26v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzwWu7eX83bW-c5LSVXqrwcY6_QGE6Lyo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064035486079:android:318573ee4fa1dce6",
+        "android_client_info": {
+          "package_name": "com.traintimes.geeksera.instantdelayrepay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064035486079-t3voa2hts8qj5r5ivq432sr4htq1t26v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzwWu7eX83bW-c5LSVXqrwcY6_QGE6Lyo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

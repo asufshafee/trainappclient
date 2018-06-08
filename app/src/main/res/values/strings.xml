@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Instant Delay Repay</string>
+
+    <array name="titles">
+        <item>Find Delays</item>
+        <item>About us</item>
+        <item>My Routes</item>
+        <item>My Account</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">223476331719060</string>
+
+
+    <string name="tab1">Find Delays</string>
+    <string name="tab2">About us</string>
+    <string name="tab3">My Routes</string>
+    <string name="tab4">My Account</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1RfvfhGuBjg2RpYbSTvj9lBdCov/ZBqBdFoNMVCc6RtqYJ5Qt6siSEWyJH610pQpYzqEdisaU7vsnUtFAonGYHfyJxITPWZmp3nq1Ph1aGqIG1OPGwfwOmk8GcJLYR8HJ2APkO3UeJsVDdjnKFMbhgLKJ0Mz6BGBW1EhrJ+4sFNIstV49xUoDMJKsJodB2Uw+fic9dK9udTXSPM3i+nuZB23xXeUELRS3LxyjypqEaobC358J/ghcOkvF5OpeiHqWeIGdnkT+pzcEoxSqLQdxRBjh1dLBROluaapERKcwHPM0X5p52RAmB8h9jzNKs5ntl9RM/YuG9s/wckv3gWpgwIDAQAB</string>
+</resources>

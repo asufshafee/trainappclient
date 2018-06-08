@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp"
+    android:orientation="vertical"
+    tools:context="com.traintimes.app.instantdelayrepay.com.traintimes.app.instantdelayrepay.Home">
+
+    <include layout="@layout/toolbar_with_back"></include>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="52dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.gigamole.navigationtabstrip.NavigationTabStrip
+            android:id="@+id/nts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:alpha="0.8"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            app:nts_active_color="@color/colorPrimaryDark"
+            app:nts_animation_duration="300"
+            app:nts_color="@color/colorPrimaryDark"
+            app:nts_corners_radius="1.5dp"
+            app:nts_factor="2.5"
+            app:nts_gravity="bottom"
+            app:nts_inactive_color="@android:color/black"
+            app:nts_size="12sp"
+            app:nts_titles="@array/titles"
+            app:nts_type="point"
+            app:nts_typeface="fonts/typeface.otf"
+            app:nts_weight="3dp" />
+
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+</RelativeLayout>

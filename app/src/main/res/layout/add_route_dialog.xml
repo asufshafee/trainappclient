@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.9"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:padding="@dimen/_5sdp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Where to ?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:alpha="0.8"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="From"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/From"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:nextFocusDown="@id/To"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimary"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="(e.g. Fenchurch)"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:minLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:alpha="0.8"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="To"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/To"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimary"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="(e.g. Fenchurch)"
+                    android:imeActionLabel="Done"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/StartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="3"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@mipmap/calender_icon"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:gravity="center|start"
+                        android:hint="Start"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@android:color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/EndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="3"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@mipmap/calender_icon"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:gravity="center|start"
+                        android:hint="End"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/AddROute"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:alpha="0.8"
+                android:background="@drawable/button_ripple"
+                android:padding="@dimen/_3sdp"
+                android:text="Add Route"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.traintimes.app.instantdelayrepay.com.traintimes.app.instantdelayrepay.Signup_Op">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/logo"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Account Status"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/Status"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:enabled="false"
+                        android:hint="Name:"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="30 Days Trial"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/Subscribe"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="Subscribe"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="Name:"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Muhammad Asif"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimaryDark" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Email"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Email"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="geeksera.online@gmail.com"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Price of Single Journey"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="Price of Single Journey"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="100"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/Save"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Save"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/Logout"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:text="Logout"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
