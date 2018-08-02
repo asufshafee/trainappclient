@@ -132,24 +132,22 @@ public class Delays_Adapter extends RecyclerView.Adapter<Delays_Adapter.MyViewHo
             }
         }
 
-        String Date = service.getTime().substring(0, 1) + ":" + service.getTime().substring(2, 3);
+        String One = service.getTime().substring(0, 2);
+        String Tow = service.getTime().substring(2, 4);
 
-
-        SimpleDateFormat format = new SimpleDateFormat("HH:MM");
-        java.util.Date newDate = null;
-        try {
-            newDate = format.parse(Date);
-        } catch (ParseException e) {
-            e.printStackTrace();
+        if (One.length() == 1) {
+            One = "0" + One;
         }
 
-        format = new SimpleDateFormat("hh:mm");
-        String date = format.format(newDate);
+        if (Tow.length() == 1) {
+            Tow = "0" + Tow;
+        }
 
+        String Date = One + ":" + Tow;
 
         holder.From.setText(NameOrigion);
         holder.To.setText(NameDestinvation);
-        holder.DateTime.setText("Departed Time : " + date);
+        holder.DateTime.setText("Departed Time : " + Date);
 
         holder.Status.setText(service.getStatus());
 

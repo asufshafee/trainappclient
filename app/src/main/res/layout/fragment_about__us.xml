@@ -39,7 +39,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="About Us"
             android:textColor="@color/colorPrimaryDark"
@@ -49,24 +48,34 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.259" />
+            app:layout_constraintVertical_bias="0.16000003" />
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="Saving you hundreds of pounds on your cancelled and delayed trains."
-            android:textColor="@color/colorPrimary"
-            android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.021" />
+            app:layout_constraintVertical_bias="0.021">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="@dimen/_100sdp"
+                android:gravity="center|start"
+                android:text="@string/saving_you_hundreds_of_pounds_on_your_cancelled_and_delayed_trains"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                />
+
+        </ScrollView>
+
+
 
 
     </android.support.constraint.ConstraintLayout>

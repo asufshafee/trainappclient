@@ -1,5 +1,6 @@
 package com.traintimes.app.instantdelayrepay;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -33,6 +34,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
+import com.traintimes.app.instantdelayrepay.utils.AppUtil;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -48,7 +51,7 @@ public class Home extends AppCompatActivity {
 
     TextView Tittle;
 
-    ProgressDialog progressDialog;
+    Dialog progressDialog;
     private DatabaseReference dbref;
     AHBottomNavigation bottomNavigation;
 
@@ -62,12 +65,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
-//        printHashKey(Home.this);
+        printHashKey(Home.this);
         myApplication = (MyApplication) getApplicationContext();
         Tittle = findViewById(R.id.Tittle_Back);
         mTopNavigationTabStrip = findViewById(R.id.nts);
-        progressDialog = new ProgressDialog(Home.this);
-        progressDialog.show();
+
+        progressDialog = AppUtils.LoadingSpinner(Home.this);
 
         findViewById(R.id.Beck).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -203,8 +206,6 @@ public class Home extends AppCompatActivity {
 
 
         dbref = FirebaseDatabase.getInstance().getReference("users/" + FirebaseAuth.getInstance().getCurrentUser().getUid());
-        progressDialog.setMessage("Please Wait.....");
-        progressDialog.setCancelable(false);
         dbref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -218,7 +219,7 @@ public class Home extends AppCompatActivity {
                 if (!myApplication.getCong()) {
                     new cn.pedant.SweetAlert.SweetAlertDialog(Home.this, cn.pedant.SweetAlert.SweetAlertDialog.SUCCESS_TYPE)
                             .setTitleText("Congratulations")
-                            .setContentText("you got 30 days free trial!")
+                            .setContentText("Your 30 days free trial starts now!")
                             .show();
                     myApplication.setCong(true);
                 }

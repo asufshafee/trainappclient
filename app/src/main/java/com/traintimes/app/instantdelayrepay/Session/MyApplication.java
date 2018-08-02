@@ -3,6 +3,8 @@ package com.traintimes.app.instantdelayrepay.Session;
 import android.app.Application;
 import android.content.SharedPreferences;
 
+import com.facebook.appevents.AppEventsLogger;
+import com.onesignal.OneSignal;
 import com.traintimes.app.instantdelayrepay.Objects.User;
 import com.facebook.FacebookSdk;
 import com.google.firebase.FirebaseApp;
@@ -30,7 +32,7 @@ public class MyApplication extends Application {
     }
 
 
-      public Boolean getCong() {
+    public Boolean getCong() {
         return pref.getBoolean("Message", false);  // getting boolean
     }
 
@@ -76,7 +78,13 @@ public class MyApplication extends Application {
             setExpire(true);
         }
         FirebaseApp.initializeApp(this);
+        AppEventsLogger.activateApp(this);
         FacebookSdk.sdkInitialize(this);
+
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
     }
 
     public User getUser() {

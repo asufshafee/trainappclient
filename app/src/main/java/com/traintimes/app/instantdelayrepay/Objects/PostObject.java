@@ -13,7 +13,7 @@ public class PostObject {
     @SerializedName("realTimeRequest")
     private Boolean mRealTimeRequest;
     @SerializedName("singleTicketPrice")
-    private Long mSingleTicketPrice;
+    private float mSingleTicketPrice;
     @SerializedName("toStation")
     private String mToStation;
 
@@ -41,11 +41,11 @@ public class PostObject {
         mRealTimeRequest = realTimeRequest;
     }
 
-    public Long getSingleTicketPrice() {
+    public float getSingleTicketPrice() {
         return mSingleTicketPrice;
     }
 
-    public void setSingleTicketPrice(Long singleTicketPrice) {
+    public void setSingleTicketPrice(float singleTicketPrice) {
         mSingleTicketPrice = singleTicketPrice;
     }
 

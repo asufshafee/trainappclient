@@ -1,6 +1,7 @@
 package com.traintimes.app.instantdelayrepay;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.traintimes.app.instantdelayrepay.R;
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
 
 import im.delight.android.webview.AdvancedWebView;
 
@@ -19,7 +21,7 @@ public class WebView extends AppCompatActivity {
 
     private AdvancedWebView mWebView;
     TextView Tittle;
-    ProgressDialog progressDialog;
+    Dialog progressDialog;
 
 
     @Override
@@ -27,8 +29,7 @@ public class WebView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
 
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Please Wait.....");
+        progressDialog = AppUtils.LoadingSpinner(WebView.this);
 
         Tittle = findViewById(R.id.Tittle_Back);
         Tittle.setText("Claim");

@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-    private String Name, Email, Price;
+    private String Name, Email, Price="0";
 
     public String getName() {
         return Name;

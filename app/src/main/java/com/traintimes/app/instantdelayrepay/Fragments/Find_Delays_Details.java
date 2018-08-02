@@ -1,6 +1,7 @@
 package com.traintimes.app.instantdelayrepay.Fragments;
 
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -27,6 +28,7 @@ import com.traintimes.app.instantdelayrepay.Objects.ResponseByApi;
 import com.traintimes.app.instantdelayrepay.R;
 import com.traintimes.app.instantdelayrepay.Session.MyApplication;
 import com.google.gson.Gson;
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -51,7 +53,7 @@ public class Find_Delays_Details extends Fragment {
 
     View view;
 
-    ProgressDialog progressDialog;
+    Dialog progressDialog;
 
 
     List<ListDate> List = new ArrayList<>();
@@ -73,8 +75,7 @@ public class Find_Delays_Details extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
-        progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait.....");
+        progressDialog = AppUtils.LoadingSpinner(getActivity());
         progressDialog.setCancelable(false);
 
 
@@ -100,7 +101,7 @@ public class Find_Delays_Details extends Fragment {
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         PostObject postObject = new PostObject();
         postObject.setDate(Start);
-        postObject.setSingleTicketPrice(Long.valueOf(myApplication.getUser().getPrice()));
+        postObject.setSingleTicketPrice(Float.parseFloat(myApplication.getUser().getPrice()));
         postObject.setToStation(ToCode);
         postObject.setRealTimeRequest(true);
         postObject.setFromStation(FromCode);

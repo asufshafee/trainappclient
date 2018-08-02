@@ -1,5 +1,6 @@
 package com.traintimes.app.instantdelayrepay;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
 import com.traintimes.app.instantdelayrepay.utils.AppUtil;
 import com.traintimes.app.instantdelayrepay.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -81,8 +83,7 @@ public class Login extends AppCompatActivity {
                     } else if (!AppUtil.isValidEmailId(Email.getText().toString())) {
                         Email.setError("Enter Valid Email id");
                     } else {
-                        final ProgressDialog progressDialog = new ProgressDialog(Login.this);
-                        progressDialog.setMessage("Wait.......");
+                        final Dialog progressDialog = AppUtils.LoadingSpinner(com.traintimes.app.instantdelayrepay.Login.this);
                         progressDialog.show();
                         FirebaseAuth.getInstance().sendPasswordResetEmail(Email.getText().toString())
                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -161,8 +162,7 @@ public class Login extends AppCompatActivity {
     private void userLogin() {
 
 
-        final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Logging in.......");
+        final Dialog progressDialog = AppUtils.LoadingSpinner(com.traintimes.app.instantdelayrepay.Login.this);
         progressDialog.show();
 
 

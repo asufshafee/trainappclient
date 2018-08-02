@@ -53,8 +53,6 @@ public class Find_Delays extends Fragment implements DatePickerDialog.OnDateSetL
     }
 
     String year, day, mounth;
-    private DatePickerDialogWithMaxMinRange datePickerDialog;
-
     String FromCode = "", ToCode = "";
     AutoCompleteTextView From, To;
     TextView Start;
@@ -272,6 +270,12 @@ public class Find_Delays extends Fragment implements DatePickerDialog.OnDateSetL
         DatePickerDialog dialog = new DatePickerDialog(getActivity(), R.style.DialogTheme11, this,
                 myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                 myCalendar.get(Calendar.DAY_OF_MONTH));
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DAY_OF_MONTH, Calendar.getInstance().get(Calendar.DAY_OF_MONTH) - 7);
+        dialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
+        calendar = Calendar.getInstance();
+//        calendar.add(Calendar.DAY_OF_MONTH, -1);
+        dialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
         dialog.show();
     }
 

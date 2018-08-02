@@ -11,7 +11,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="facebook_app_id">223476331719060</string>
+    <string name="facebook_app_id">331319324065764</string>
 
 
     <string name="tab1">Find Delays</string>
@@ -19,5 +19,20 @@
     <string name="tab3">My Routes</string>
     <string name="tab4">My Account</string>
     <string name="title_activity_web">WebActivity</string>
+
     <string name="key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1RfvfhGuBjg2RpYbSTvj9lBdCov/ZBqBdFoNMVCc6RtqYJ5Qt6siSEWyJH610pQpYzqEdisaU7vsnUtFAonGYHfyJxITPWZmp3nq1Ph1aGqIG1OPGwfwOmk8GcJLYR8HJ2APkO3UeJsVDdjnKFMbhgLKJ0Mz6BGBW1EhrJ+4sFNIstV49xUoDMJKsJodB2Uw+fic9dK9udTXSPM3i+nuZB23xXeUELRS3LxyjypqEaobC358J/ghcOkvF5OpeiHqWeIGdnkT+pzcEoxSqLQdxRBjh1dLBROluaapERKcwHPM0X5p52RAmB8h9jzNKs5ntl9RM/YuG9s/wckv3gWpgwIDAQAB</string>
+    <string name="saving_you_hundreds_of_pounds_on_your_cancelled_and_delayed_trains"><p>Instant Delay Repay was set up to make sure you don't need to remember or research the delays you experience. We don't take any commission and want honest customers to be able to reclaim the money their owed. Save hundreds a month on the routes you take.</p>
+<p></p>
+<p>We currently cover the majority of the National Rail network, but if we don't have one, feel free to contact us a admin@instantdelayrepay.co.uk.</p>
+<p></p>
+<p>There are a few things to remember though:</p>
+<p></p>
+<ul>
+<li>The trial account will expire in 30 days, so make sure you subscribe to not miss out</li>
+<li>Only claim on routes you travel on</li>
+<li>Have your ticket ready to submit to the website. We work across all tickets, including season tickets.</li>
+<li>"Find a delay" only works up to 7 days previously and won't show today's results.</li>
+</ul>
+<p></p>
+<p>You are shown delay information for all trains, it's worth noting some rail providers will not pay out unless the delay is over 30 minutes (Some are above 15).</p></string>
 </resources>

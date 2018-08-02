@@ -2,6 +2,7 @@ package com.traintimes.app.instantdelayrepay.Fragments;
 
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -26,6 +27,7 @@ import com.traintimes.app.instantdelayrepay.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
 import com.traintimes.app.instantdelayrepay.util.IabHelper;
 import com.traintimes.app.instantdelayrepay.util.IabResult;
 import com.traintimes.app.instantdelayrepay.util.Inventory;
@@ -66,7 +68,7 @@ public class My_Account extends Fragment {
 
     // The helper object
     IabHelper mHelper;
-    ProgressDialog progressDialog;
+    Dialog progressDialog;
 
 
     public My_Account() {
@@ -89,8 +91,7 @@ public class My_Account extends Fragment {
         Status = view.findViewById(R.id.Status);
         Subscribe = view.findViewById(R.id.Subscribe);
         CheckPurchase();
-        progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setMessage("Please Wait..");
+        progressDialog = AppUtils.LoadingSpinner(getActivity());
         progressDialog.setCancelable(false);
         progressDialog.show();
         /* base64EncodedPublicKey should be YOUR APPLICATION'S PUBLIC KEY

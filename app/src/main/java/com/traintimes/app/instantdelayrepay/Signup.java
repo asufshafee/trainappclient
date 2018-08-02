@@ -1,5 +1,6 @@
 package com.traintimes.app.instantdelayrepay;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.traintimes.app.instantdelayrepay.Objects.User;
 import com.traintimes.app.instantdelayrepay.Session.MyApplication;
+import com.traintimes.app.instantdelayrepay.util.AppUtils;
 import com.traintimes.app.instantdelayrepay.utils.AppUtil;
 import com.traintimes.app.instantdelayrepay.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,7 +29,7 @@ public class Signup extends AppCompatActivity {
 
     TextView Tittle;
     EditText Name, Email, Password, Price;
-    private ProgressDialog progressDialog;
+    private Dialog progressDialog;
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
     MyApplication myApplication;
@@ -52,7 +54,7 @@ public class Signup extends AppCompatActivity {
         }
 
 
-        progressDialog = new ProgressDialog(Signup.this);
+        progressDialog = AppUtils.LoadingSpinner(Signup.this);
 
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() != null) {
@@ -127,7 +129,6 @@ public class Signup extends AppCompatActivity {
     private void registeruser() {
 
 
-        progressDialog.setMessage("Please Wait...");
         progressDialog.show();
 
         firebaseAuth.createUserWithEmailAndPassword(Email.getText().toString(), Password.getText().toString()).addOnCompleteListener(this,

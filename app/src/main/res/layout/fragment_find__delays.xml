@@ -91,7 +91,7 @@
                     android:background="@color/colorPrimary"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="(e.g. Fenchurch)"
+                    android:hint="(e.g. Purfleet)"
                     android:inputType="text"
                     android:lines="1"
                     android:maxLines="1"
@@ -138,11 +138,11 @@
                     android:background="@color/colorPrimary"
                     android:drawablePadding="@dimen/_10sdp"
                     android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="(e.g. Fenchurch)"
-                    android:inputType="text"
+                    android:hint="(e.g. London Fenchurch Street)"
                     android:imeActionLabel="Done"
-                    android:singleLine="true"
+                    android:inputType="text"
                     android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true"
                     android:textColor="@android:color/black"
                     android:textSize="12dp" />
             </LinearLayout>

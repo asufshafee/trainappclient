@@ -10,201 +10,202 @@
 
     <include layout="@layout/toolbar_with_back"></include>
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:scrollbars="vertical"
-    android:scrollbarSize="@dimen/_10sdp"
-    android:layout_height="wrap_content">
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:scrollbarSize="@dimen/_10sdp"
+        android:scrollbars="vertical">
 
-        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:padding="@dimen/_15sdp">
+            android:layout_height="match_parent">
 
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:background="@mipmap/logo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16sdp"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
-                android:text="Saving you hundreds of pounds on your cancelled and delayed trains."
-                android:textColor="@color/colorPrimary"
-                android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:layout_constraintVertical_bias="0.060000002" />
-
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
+                android:padding="@dimen/_15sdp">
 
 
-                <EditText
-                    android:id="@+id/Name"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:alpha="0.8"
-                    android:textSize="12dp"
-                    android:singleLine="true"
-                    android:minLines="1"
-                    android:inputType="text"
-                    android:background="@android:color/white"
-                    android:drawablePadding="@dimen/_10sdp"
-                    android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="Name"
-                    android:lines="1"
-                    android:maxLines="1"
-                    android:paddingStart="@dimen/_10sdp" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@mipmap/logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/colorPrimaryDark" />
-
-
-                <EditText
-                    android:id="@+id/Email"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:alpha="0.8"
-                    android:background="@android:color/white"
-                    android:drawablePadding="@dimen/_10sdp"
-                    android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:lines="1"
-                    android:maxLines="1"
-                    android:textSize="12dp"
-
-                    android:paddingStart="@dimen/_10sdp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/colorPrimaryDark" />
-
-                <EditText
-                    android:id="@+id/Password"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:alpha="0.8"
-                    android:background="@android:color/white"
-                    android:drawablePadding="@dimen/_10sdp"
-                    android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:textSize="12dp"
-
-                    android:lines="1"
-                    android:maxLines="1"
-                    android:paddingStart="@dimen/_10sdp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/colorPrimaryDark" />
-
-
-                <EditText
-                    android:id="@+id/Price"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:alpha="0.8"
-                    android:background="@android:color/white"
-                    android:drawablePadding="@dimen/_10sdp"
-                    android:drawableTint="@color/colorPrimaryDark"
-                    android:hint="Price of Single Journey"
-                    android:inputType="number"
-                    android:lines="1"
-                    android:maxLines="1"
-                    android:textSize="12dp"
-                    android:paddingStart="@dimen/_10sdp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/colorPrimaryDark" />
-
-
-                <CheckBox
-                    android:id="@+id/Terms"
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:buttonTint="@color/colorPrimary"
-                    android:checked="true"
-                    android:padding="@dimen/_5sdp"
-                    android:text="I accept the terms and conditions"
-                    android:textColor="@color/colorPrimary" />
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="Saving you hundreds of pounds on your cancelled and delayed trains."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.060000002" />
 
-                <com.rey.material.widget.Button
-                    android:id="@+id/Signup"
-                    android:layout_width="100dp"
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:background="@drawable/button_ripple"
-                    android:text="Sign up"
-                    android:textSize="13dp"
-                    android:alpha="0.8"
-                    android:textColor="@color/colorPrimary"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
 
-                <com.rey.material.widget.Button
-                    android:id="@+id/ForgetPassword"
-                    android:layout_width="200dp"
-                    android:layout_height="30dp"
-                    android:visibility="invisible"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:alpha="0.8"
-                    android:textSize="13dp"
-                    android:background="@android:color/transparent"
-                    android:text="Forget Password"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </LinearLayout>
-        </android.support.constraint.ConstraintLayout>
-    </LinearLayout>
-</ScrollView>
+
+                    <EditText
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:alpha="0.8"
+                        android:background="@android:color/white"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <EditText
+                        android:id="@+id/Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:alpha="0.8"
+                        android:background="@android:color/white"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:alpha="0.8"
+                        android:background="@android:color/white"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:lines="1"
+
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <EditText
+                        android:id="@+id/Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:alpha="0.8"
+                        android:background="@android:color/white"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="Price of Single Journey"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorPrimaryDark" />
+
+
+                    <CheckBox
+                        android:id="@+id/Terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:padding="@dimen/_5sdp"
+                        android:text="I accept the terms and conditions"
+                        android:textColor="@color/colorPrimary" />
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/Signup"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:alpha="0.8"
+                        android:background="@drawable/button_ripple"
+                        android:text="Sign up"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/ForgetPassword"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:alpha="0.8"
+                        android:background="@android:color/transparent"
+                        android:text="Forget Password"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
